@@ -15,6 +15,7 @@ abstract class Routes {
   static const ADMIN_CREATE_QUIZ = _Paths.ADMIN_CREATE_QUIZ;
 
   static var HOME;
+  static const THEME = _Paths.THEME;
 }
 
 abstract class _Paths {
@@ -29,4 +30,5 @@ abstract class _Paths {
   static const ADMIN_CREATE_SUBJECT = '/admin-create-subject';
   static const ADMIN_EDIT_SUBJECT = '/admin-edit-subject';
   static const ADMIN_CREATE_QUIZ = '/admin-create-quiz';
+  static const THEME = '/theme';
 }
