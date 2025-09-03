@@ -1,11 +1,15 @@
 import 'package:get/get.dart';
 
+import '../modules/admin_create_lesson/bindings/admin_create_lesson_binding.dart';
+import '../modules/admin_create_lesson/views/admin_create_lesson_view.dart';
 import '../modules/admin_create_quiz/bindings/admin_create_quiz_binding.dart';
 import '../modules/admin_create_quiz/views/admin_create_quiz_view.dart';
 import '../modules/admin_create_subject/bindings/admin_create_subject_binding.dart';
 import '../modules/admin_create_subject/views/admin_create_subject_view.dart';
 import '../modules/admin_dashboard/bindings/admin_dashboard_binding.dart';
 import '../modules/admin_dashboard/views/admin_dashboard_view.dart';
+import '../modules/admin_edit_lesson/bindings/admin_edit_lesson_binding.dart';
+import '../modules/admin_edit_lesson/views/admin_edit_lesson_view.dart';
 import '../modules/admin_edit_subject/bindings/admin_edit_subject_binding.dart';
 import '../modules/admin_edit_subject/views/admin_edit_subject_view.dart';
 import '../modules/admin_performance_analysis/bindings/admin_performance_analysis_binding.dart';
@@ -78,6 +82,16 @@ class AppPages {
       name: _Paths.ADMIN_CREATE_QUIZ,
       page: () => const AdminCreateQuizView(),
       binding: AdminCreateQuizBinding(),
+    ),
+    GetPage(
+      name: _Paths.ADMIN_EDIT_LESSON,
+      page: () => const AdminEditLessonView(),
+      binding: AdminEditLessonBinding(),
+    ),
+    GetPage(
+      name: _Paths.ADMIN_CREATE_LESSON,
+      page: () => const AdminCreateLessonView(),
+      binding: AdminCreateLessonBinding(),
     ),
   ];
 }

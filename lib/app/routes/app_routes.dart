@@ -16,6 +16,8 @@ abstract class Routes {
 
   static var HOME;
   static const THEME = _Paths.THEME;
+  static const ADMIN_EDIT_LESSON = _Paths.ADMIN_EDIT_LESSON;
+  static const ADMIN_CREATE_LESSON = _Paths.ADMIN_CREATE_LESSON;
 }
 
 abstract class _Paths {
@@ -31,4 +33,6 @@ abstract class _Paths {
   static const ADMIN_EDIT_SUBJECT = '/admin-edit-subject';
   static const ADMIN_CREATE_QUIZ = '/admin-create-quiz';
   static const THEME = '/theme';
+  static const ADMIN_EDIT_LESSON = '/admin-edit-lesson';
+  static const ADMIN_CREATE_LESSON = '/admin-create-lesson';
 }
