@@ -1,5 +1,6 @@
 import 'package:get/get.dart';
 
+import '../global_widgets/unknown_view.dart';
 import '../modules/admin_create_lesson/bindings/admin_create_lesson_binding.dart';
 import '../modules/admin_create_lesson/views/admin_create_lesson_view.dart';
 import '../modules/admin_create_quiz/bindings/admin_create_quiz_binding.dart';
@@ -30,7 +31,8 @@ part 'app_routes.dart';
 class AppPages {
   AppPages._();
 
-  static final INITIAL = Routes.HOME;
+  // Set a concrete initial route to a real page.
+  static const INITIAL = _Paths.ADMIN_DASHBOARD;
 
   static final routes = [
     GetPage(
@@ -94,4 +96,9 @@ class AppPages {
       binding: AdminCreateLessonBinding(),
     ),
   ];
+
+  static final unknownRoute = GetPage(
+    name: '/404',
+    page: () => const UnknownView(),
+  );
 }
